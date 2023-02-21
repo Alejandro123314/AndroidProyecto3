@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AUT2_03 Aplicación Final Android</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <string name="nav_header_title">Listado Coches</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Coches</string>
+    <string name="menu_gallery">Crear coches</string>
+</resources>
