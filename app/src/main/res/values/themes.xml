@@ -19,6 +19,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.EjemploSplashScreen.NoActionBar" parent="Theme.AUT2_03AplicaciónFinalAndroid">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.AUT2_03AplicaciónFinalAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AUT2_03AplicaciónFinalAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
