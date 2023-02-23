@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapter extends RecyclerView.Adapter {
+/*public class MyAdapter extends RecyclerView.Adapter {
     private String[] mDataSet;
 
 
@@ -43,7 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        holder.mTextView.setText(mDataSet[position]);
+        holder.getAdapterPosition();
     }
 
     // Método que define la cantidad de elementos del RecyclerView
@@ -53,6 +53,6 @@ public class MyAdapter extends RecyclerView.Adapter {
         return mDataSet.length;
     }
 
-}
+}*/
 
 
