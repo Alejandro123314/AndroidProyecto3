@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/*public class SegundaActividad extends Activity {
+public class SegundaActividad extends Activity {
     private RecyclerView mRecyclerView;
     private MyAdapter mAdapter;
 
@@ -38,5 +38,5 @@ import androidx.recyclerview.widget.RecyclerView;
     }
 
     // ...
-}*/
+}
 

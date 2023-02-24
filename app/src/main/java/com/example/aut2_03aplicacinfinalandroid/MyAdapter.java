@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-/*public class MyAdapter extends RecyclerView.Adapter {
+public class MyAdapter extends RecyclerView.Adapter {
     private String[] mDataSet;
 
 
@@ -53,6 +53,6 @@ import androidx.recyclerview.widget.RecyclerView;
         return mDataSet.length;
     }
 
-}*/
+}
 
 
