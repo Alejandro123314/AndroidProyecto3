@@ -14,7 +14,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btngrabar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -23,19 +23,19 @@
         android:text="Grabar" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btndetener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/btngrabar"
         android:layout_centerHorizontal="true"
         android:onClick="detener"
         android:text="Detener grabación" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnreproduccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/btndetener"
         android:layout_centerHorizontal="true"
         android:onClick="reproducir"
         android:text="Reproducir grabación" />

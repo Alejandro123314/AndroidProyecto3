@@ -5,8 +5,14 @@
     <string name="nav_header_title">Listado Coches</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_activity4">activity4</string>
+    <string name="action_activity3">activity3</string>
+    <string name="action_activity2">activity2</string>
+
 
     <string name="menu_home">Coches</string>
     <string name="menu_gallery">Crear coches</string>
+    <string name="menu_actualizar">Actualizar coches</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

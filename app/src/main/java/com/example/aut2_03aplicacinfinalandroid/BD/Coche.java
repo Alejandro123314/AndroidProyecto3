@@ -40,8 +40,8 @@ public class Coche {
 
     public void eliminarCoche(){
         SQLiteDatabase sqlite = bd.getWritableDatabase();
-        String[] arg = {String.valueOf(this.id)};
-        sqlite.delete("coches","id = ?", arg);
+        String[] arg = {String.valueOf(this.matricula)};
+        sqlite.delete("coches","matricula = ?", arg);
     }
 
     public void actualizarCoche(){
@@ -49,8 +49,8 @@ public class Coche {
         ContentValues cv = new ContentValues();
         cv.put("modelo", this.modelo);
         cv.put("matricula", this.matricula);
-        String[] arg = {String.valueOf(this.id)};
-        sqlite.update("coches", cv, "id = ?", arg);
+        String[] arg = {String.valueOf(this.matricula)};
+        sqlite.update("coches", cv, "matricula = ?", arg);
     }
 
     public static ArrayList<Coche> obtenerCoche(Context context){

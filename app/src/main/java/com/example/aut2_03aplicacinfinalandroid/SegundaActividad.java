@@ -10,11 +10,10 @@ public class SegundaActividad extends Activity {
     private RecyclerView mRecyclerView;
     private MyAdapter mAdapter;
 
-    private static final String[] myDataSet = {
-            "PHP",
-            "Javascript",
-            "Go",
-            "Python"
+    private static final DatosListado[] myDataSet = {
+           new DatosListado(R.drawable.ic_menu_car, "titulo", "descripcion"),
+            new DatosListado(R.drawable.ic_menu_create, "titulo2", "descripcion"),
+            new DatosListado(R.drawable.ic_menu_update, "titulo3", "descripcion")
     };
 
     @Override

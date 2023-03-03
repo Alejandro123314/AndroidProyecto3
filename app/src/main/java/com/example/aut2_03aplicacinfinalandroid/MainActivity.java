@@ -1,12 +1,27 @@
 package com.example.aut2_03aplicacinfinalandroid;
 
+
+
+
+
+
+import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import com.example.aut2_03aplicacinfinalandroid.ui.gallery.GalleryFragment;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -29,11 +44,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
+
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Fragment cf = new GalleryFragment();
+                FragmentManager fm =getSupportFragmentManager();
+                FragmentTransaction ft =fm.beginTransaction();
+                ft.replace( R.id.nav_host_fragment_content_main,cf);
+                ft.addToBackStack(null);
+                ft.commit();
+               // getSupportFragmentManager().beginTransaction().replace(binding.getRoot().getId(),cf).commit();
+               /* FragmentTransaction cft = getFragmentManager().beginTransaction();
+                ((FragmentTransaction) cft).replace(R.id.nav_gallery, cf);*/
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -47,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
     }
 
     @Override
@@ -61,5 +86,26 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_activity2:
+                Intent intent = new Intent(this, SegundaActividad.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_activity3:
+                Intent intent3 = new Intent(this, TerceraActividad.class);
+                startActivity(intent3);
+                return true;
+            case R.id.action_activity4:
+                Intent intent4 = new Intent(this, CuartaActividad.class);
+                startActivity(intent4);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 }
