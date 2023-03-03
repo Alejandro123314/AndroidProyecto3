@@ -5,9 +5,10 @@
     <string name="nav_header_title">Listado Coches</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_activity4">activity4</string>
-    <string name="action_activity3">activity3</string>
-    <string name="action_activity2">activity2</string>
+    <string name="action_activity4">Activity4</string>
+    <string name="action_activity3">Activity3</string>
+    <string name="action_activity2">Activity2</string>
+    <string name="acercade">Acerca de</string>
 
 
     <string name="menu_home">Coches</string>

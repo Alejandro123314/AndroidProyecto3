@@ -97,6 +97,7 @@ LocationTruck lt;
                        permisosDenegados.add(p);
                    }
                }
+               Log.d("a",  ""+permisosDenegados.size());
                if (permisosDenegados.size() > 0){
                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
                        if(shouldShowRequestPermissionRationale(permisosDenegados.get(0))){

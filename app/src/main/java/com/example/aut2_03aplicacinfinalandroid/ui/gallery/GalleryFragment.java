@@ -11,12 +11,15 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.aut2_03aplicacinfinalandroid.BD.Coche;
 import com.example.aut2_03aplicacinfinalandroid.R;
 import com.example.aut2_03aplicacinfinalandroid.databinding.FragmentGalleryBinding;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
 
 public class GalleryFragment extends Fragment {
 

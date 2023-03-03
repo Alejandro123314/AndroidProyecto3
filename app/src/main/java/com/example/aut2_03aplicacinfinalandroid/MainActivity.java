@@ -48,12 +48,13 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Fragment cf = new GalleryFragment();
                 FragmentManager fm =getSupportFragmentManager();
                 FragmentTransaction ft =fm.beginTransaction();
-                ft.replace( R.id.nav_host_fragment_content_main,cf);
-                ft.addToBackStack(null);
-                ft.commit();
+                ft.replace( R.id.nav_host_fragment_content_main,cf).commit();
+                //ft.addToBackStack(null);
+              //  ft.commit();
                // getSupportFragmentManager().beginTransaction().replace(binding.getRoot().getId(),cf).commit();
                /* FragmentTransaction cft = getFragmentManager().beginTransaction();
                 ((FragmentTransaction) cft).replace(R.id.nav_gallery, cf);*/
@@ -102,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_activity4:
                 Intent intent4 = new Intent(this, CuartaActividad.class);
                 startActivity(intent4);
+                return true;
+            case R.id.acercade:
+                Intent intent5 = new Intent(this, Acerde.class);
+                startActivity(intent5);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

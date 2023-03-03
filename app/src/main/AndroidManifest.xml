@@ -52,6 +52,7 @@
         <activity android:name=".SegundaActividad" />
         <activity android:name=".TerceraActividad" />
         <activity android:name=".CuartaActividad" />
+        <activity android:name=".Acerde" />
     </application>
 
 </manifest>
